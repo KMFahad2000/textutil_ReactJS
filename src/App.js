@@ -6,8 +6,8 @@ function App() {
   return (
     <>
       <Navbar title=" Textutils" aboutText="About Us" />
-      <div className="container">
-        <Textform />
+      <div className="container my-4">
+        <Textform head="Text analyzers" />
       </div>
     </>
   );

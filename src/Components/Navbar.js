@@ -56,5 +56,5 @@ export default function Navbar({
 
 Navbar.propTypes = {
   title: propTypes.string,
-  aboutText: propTypes.string
+  aboutText: propTypes.string,
 };
