@@ -1,11 +1,10 @@
 import React from 'react'
 
 export default function About(props) {
-   
   return (
     <div>
       <h2>About Us</h2>
-      <div className="accordion" id="accordionExample" >
+      <div className="accordion" id="accordionExample">
         <div className="accordion-item">
           <h2 className="accordion-header">
             <button

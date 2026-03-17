@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Textform({ head = "default heading" }) {
+export default function Textform({ heading = "default heading" }) {
   const [inputText, setInputText] = useState("enter your text here");  // ✅ Input only
   const [previewText, setPreviewText] = useState("");                 // ✅ Preview only
 
@@ -31,7 +31,7 @@ export default function Textform({ head = "default heading" }) {
     <>
       {/* Input Section */}
       <div className="mb-4">
-        <h3>{head}</h3>
+        <h3>{heading}</h3>
         <div className="mb-3">
           <textarea
             className="form-control"

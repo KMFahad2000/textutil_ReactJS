@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export default function Navbar({ title, aboutText, mode, togglemode }) {
+export default function Navbar({ title, aboutText, mode, toggleMode }) {
   return (
     <nav className={`navbar navbar-expand-lg ${mode === "dark" ? 'navbar-dark bg-dark' : 'navbar-light bg-light'}`}>
       <div className="container-fluid">
@@ -39,7 +39,7 @@ export default function Navbar({ title, aboutText, mode, togglemode }) {
               className="form-check-input" 
               type="checkbox" 
               checked={mode === "dark"}
-              onChange={togglemode}
+              onChange={toggleMode}
               id="darkModeSwitch" 
             />
             <label className="form-check-label" htmlFor="darkModeSwitch">
@@ -56,5 +56,5 @@ Navbar.propTypes = {
   title: PropTypes.string,
   aboutText: PropTypes.string,
   mode: PropTypes.string,
-  togglemode: PropTypes.func
+  toggleMode: PropTypes.func
 };
